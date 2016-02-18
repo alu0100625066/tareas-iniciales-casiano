@@ -3,25 +3,45 @@ Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
 
 ## Instalación de NodeJS en Windows
 
-Es un intérprete **Javascript** del lado del servidor que cambia la noción de cómo debería trabajar un servidor. Su meta es permitir a un programador construir aplicaciones altamente escalables y escribir código que maneje decenas de miles de conexiones simultáneas en una sólo una máquina física.
+Antes de instalar NodeJS en windows, debes tener en cuenta que Node se basa en líneas de comando, por ello debes sentirte cómodo con las herramientas de de línea de comando, como el Windows Command Prompt, PowerShell o Git Shell (que viene instalado con el Github de escritorio para Windows).  
 
-Para empezar a utilizarlo descargar el paquete de instalación para la plataforma windows y seguir los pasos del asistente de instalación de **NodeJS**.
+![](images/NodeJS_web.png)
 
-![](images/node.png)
+1. Para instalarlo, primero debemos descargar el instalador de la propia página web de [NodeJS](https://nodejs.org/en/)
 
-Abrimos la consola de **NodeJS** y comprobamos que se ha instalado correctamente, aparecerá el siguiente mensaje que indica que se ha instalado.
+2. Ejecutar el instalador.
 
-Instalamos el framework **Express** con la consola de **NodeJS** y el siguiente comando:
+3. Sigue los pasos del instalador y acepta los términos de uso.
 
-**Comando**
+4. Reinicia el ordenador. No podrás ejecutarlo hasta que no lo reinicies.
 
-> `npm install express --save`
+## Instalación de NodeJS en Ubuntu
 
-![](images/node2.png)
+Para instalar NodeJS en Ubuntu, habrimos un terminal (Ctrl + Alt + T), para tener la versión más actual primero usaremos los siguientes códigos.
+
+> * `sudo apt-get update`
+>
+> * `sudo apt-get install nodejs`
+
+También será muy importante instalar el **npm**, que se hace con el siguiente comando.
+
+> * `sudo apt-get install npm`
+
+## Instalar Express en Ubuntu y en Windows
+
+Ahora que ya tenemos el **npm** podemos instalar el framework Express, para ello usaremos la siguiente línea de comando.
+
+> * `npm install express --save`
+
+![](images/Install_Express.png)
 
 ## Instalación del editor de texto Atom
 
 Usaremos **Atom** como editor de texto para el desarrollo de nuestros proyectos, para ello descargamos el instalador en la página oficial de atom, y a continuación ejecutamos el asistente de instalación.
+
+
+
+
 
 ![](images/atom1.png)
 
