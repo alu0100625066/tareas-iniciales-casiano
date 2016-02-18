@@ -3,7 +3,7 @@ Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
 
 ## Instalación de NodeJS en Windows
 
-Antes de instalar NodeJS en windows, debes tener en cuenta que Node se basa en líneas de comando, por ello debes sentirte cómodo con las herramientas de de línea de comando, como el Windows Command Prompt, PowerShell o Git Shell (que viene instalado con el Github de escritorio para Windows).  
+Antes de instalar NodeJS en windows, debes tener en cuenta que Node se basa en líneas de comando, por ello debes sentirte cómodo con las herramientas de de línea de comando, como el Windows Command Prompt, PowerShell o Git Shell (que viene instalado con el Github de escritorio para Windows).
 
 ![](images/NodeJS_web.png)
 
