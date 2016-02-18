@@ -4,6 +4,7 @@ Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
 ## Instalación de NodeJS en Windows
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Antes de instalar NodeJS en windows, debes tener en cuenta que Node se basa en líneas de comando, por ello debes sentirte cómodo con las herramientas de de línea de comando, como el Windows Command Prompt, PowerShell o Git Shell (que viene instalado con el Github de escritorio para Windows).  
 
 ![](images/NodeJS_web.png)
@@ -36,6 +37,8 @@ Ahora que ya tenemos el **npm** podemos instalar el framework Express, para ello
 
 ![](images/Install_Express.png)
 =======
+=======
+>>>>>>> 192b1fb82656d4c74c53fdabe874f53b3e670f6d
 Es un intérprete **Javascript** del lado del servidor que cambia la noción de cómo debería trabajar un servidor. Su meta es permitir a un programador construir aplicaciones altamente escalables y escribir código que maneje decenas de miles de conexiones simultáneas en una sólo una máquina física.
 
 Para empezar a utilizarlo descargar el paquete de instalación para la plataforma windows y seguir los pasos del asistente de instalación de **NodeJS**.
@@ -51,6 +54,9 @@ Instalamos el framework **Express** con la consola de **NodeJS** y el siguiente 
 > `npm install express --save`
 
 ![](images/node2.png)
+<<<<<<< HEAD
+>>>>>>> 192b1fb82656d4c74c53fdabe874f53b3e670f6d
+=======
 >>>>>>> 192b1fb82656d4c74c53fdabe874f53b3e670f6d
 
 ## Instalación del editor de texto Atom
@@ -58,10 +64,13 @@ Instalamos el framework **Express** con la consola de **NodeJS** y el siguiente 
 Usaremos **Atom** como editor de texto para el desarrollo de nuestros proyectos, para ello descargamos el instalador en la página oficial de atom, y a continuación ejecutamos el asistente de instalación.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 192b1fb82656d4c74c53fdabe874f53b3e670f6d
 =======
 >>>>>>> 192b1fb82656d4c74c53fdabe874f53b3e670f6d
 ![](images/atom1.png)
@@ -140,6 +149,9 @@ Listas
 * [Cloud 9 IDE](https://c9.io)
 * [Markdown](http://daringfireball.net/projects/markdown/)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [Resultado del Markdown HTML](http://alu0100536652.github.io/Tutorial-STW/)
+=======
+>>>>>>> 192b1fb82656d4c74c53fdabe874f53b3e670f6d
 =======
 >>>>>>> 192b1fb82656d4c74c53fdabe874f53b3e670f6d
