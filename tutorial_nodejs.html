@@ -461,88 +461,25 @@ pre.editor-colors .fold-marker:after,
 }
 </style>
   </head>
-  <body class='markdown-preview'><h1 id="tutorial-nodejs-express-atom-github-cloud9-y-markdown">Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown</h1>
-<h2 id="instalaci-n-de-nodejs-en-windows">Instalación de NodeJS en Windows</h2>
-<p>Antes de instalar NodeJS en windows, debes tener en cuenta que Node se basa en líneas de comando, por ello debes sentirte cómodo con las herramientas de de línea de comando, como el Windows Command Prompt, PowerShell o Git Shell (que viene instalado con el Github de escritorio para Windows).  </p>
-<p><img src="E:\ULL\PL\tareas-iniciales-casiano\images\NodeJS_web.png" alt=""></p>
+  <body>
+<h1 id="tutorial-primeros-pasos-en-nodejs">Tutorial primeros pasos en NodeJS</h1>
+<h2 id="tutorial-hello-world">Tutorial Hello World</h2>
+<p>En este tutorial te guiaré en la creación de tu primer programa en Javascript gracias a la herramienta NodeJS.</p>
+<p>Lo primero es abrir la consola de NodeJS, para ello la invocaremos con: &gt; <em><code>$ node</code></em></p>
+<p>Una vez abierta, vamos a crear nuestro primer mensaje mostrado por consola, para ello usaremos el comando <code>console.log('Hola mundo')</code>, la salida de este comando es la siguiente.</p>
+<div class="figure">
+<img src="images/HelloWorld.png" />
 
-<ol>
-<li><p>Para instalarlo, primero debemos descargar el instalador de la propia página web de <a href="https://nodejs.org/en/"><strong>NodeJS</strong></a></p>
-</li>
-<li><p>Ejecutar el instalador.</p>
-</li>
-<li><p>Sigue los pasos del instalador y acepta los términos de uso.</p>
-</li>
-<li><p>Reinicia el ordenador. No podrás ejecutarlo hasta que no lo reinicies.</p>
-</li>
-</ol>
-<h2 id="instalaci-n-de-nodejs-en-ubuntu">Instalación de NodeJS en Ubuntu</h2>
-<p>Para instalar NodeJS en Ubuntu, habrimos un terminal (Ctrl + Alt + T), para tener la versión más actual primero usaremos los siguientes códigos.</p>
-<blockquote>
-<ul>
-<li><p><code>sudo apt-get update</code></p>
-</li>
-<li><p><code>sudo apt-get install nodejs</code></p>
-</li>
-</ul>
-</blockquote>
-<p>También será muy importante instalar el <strong>npm</strong>, que se hace con el siguiente comando.</p>
-<blockquote>
-<ul>
-<li><code>sudo apt-get install npm</code></li>
-</ul>
-</blockquote>
+</div>
+<p>Ahora, trasladaremos este conocimiento para hacer nuestro primer programa. Creamos un archivo con vi al que llamaremos <a href="/hello.js"><strong>hello.js</strong></a></p>
+<p><img src="images/HelloWorldJS.png" /> <img src="images/HelloWorldEx.png" /></p>
+<p>Ahora que ya hemos visto como crear un programa en <em>.js</em> pasaremos a hacer un servidor http de <a href="/hello_http.js"><strong>Hello World</strong></a></p>
+<p>En este programa, nuestra primera línea <em><code>(var http = require('http');)</code></em>, estamos incluyendo el módulo principal http y lo estamos asignando en una variable llamada <strong><em>http</em></strong>.</p>
+<p>Lo siguiente que hacemos es crear una variable llamada <strong><em>server</em></strong> mediante el método http.createServer y lo que le pasamos como argumento es una clausura que es lamada cada vez que llega una petición http.</p>
+<p>Por último llamamos a server.listen(8080) para decirle a node.js que puerto queremos para ejecutar nuestro servidor.</p>
+<p>Ahora cuando accedamos a <strong><em>http://localhost:8080/</em></strong> veremos el mensaje <code>Hello Http</code>, otra forma alternativa de activaro es abriendo una nueva terminal y usar curl para testear el servidor.</p>
+<div class="figure">
+<img src="images/Curl.png" />
 
-
-<h2 id="instalar-express-en-ubuntu-y-en-windows">Instalar Express en Ubuntu y en Windows</h2>
-<p>Ahora que ya tenemos el <strong>npm</strong> podemos instalar el framework Express, para ello usaremos la siguiente línea de comando.</p>
-<blockquote>
-<ul>
-<li><code>npm install express --save</code></li>
-</ul>
-</blockquote>
-<p><img src="E:\ULL\PL\tareas-iniciales-casiano\images\Install_Express.png" alt=""></p>
-<h2 id="instalaci-n-del-editor-de-texto-atom">Instalación del editor de texto Atom</h2>
-<p>Usaremos <a href="https://atom.io"><strong>Atom</strong></a> como editor de texto para el desarrollo de nuestros proyectos, para ello descargamos el instalador en la página oficial de atom, y a continuación ejecutamos el asistente de instalación.</p>
-<p><img src="E:\ULL\PL\tareas-iniciales-casiano\images\Install_Atom.png" alt=""></p>
-<p><img src="E:\ULL\PL\tareas-iniciales-casiano\images\atom1.png" alt=""></p>
-<p>Dado que vamos a utilizar el formato <strong>Markdown</strong> es bueno saber que en <strong>Atom</strong> podremos obtener una preview del contenido de nuestro fichero Markdown ya que incorpora el formato <strong>GitHub Markdown</strong> con el comando:</p>
-<p><strong>Comando</strong></p>
-<blockquote>
-<ul>
-<li>Markdown preview <code>ctrl+shift+m</code></li>
-<li>Markdown export to HTML <code>Save As HTML</code></li>
-</ul>
-</blockquote>
-<p>Se ve de la siguiente forma.</p>
-<p><img src="E:\ULL\PL\tareas-iniciales-casiano\images\Atom.png" alt="Inception"></p>
-<h2 id="instalaci-n-de-github-desktop">Instalación de GitHub Desktop</h2>
-<p>La aplicación de escritorio de <strong>Git</strong> sólo está disponible para Windows y Mac. Para instalarlo accedemos a la página oficial de <a href="https://desktop.github.com"><strong>GitHub</strong></a> y descargamos el instalador que ejecutaremos posteriormente para iniciar el asistente de instalación.</p>
-<p><img src="E:\ULL\PL\tareas-iniciales-casiano\images\git.png" alt=""></p>
-<p>Una vez instalado configuramos nuestra cuenta de <strong>GitHub</strong> en la aplicación para poder sincronizar nuestro repositorio tanto local como remoto, en caso de no tener cuenta crearemos una en la página de <strong>GitHub</strong>.</p>
-<h2 id="cloud-9">Cloud 9</h2>
-<p>Es un IDE de desarrollo online, para su uso será necesario crear una cuenta en la página oficial o acceder con las credenciales de GitHub si ya se dispone de una cuenta. Una vez registrados podremos crear proyectos de varias tecnologías como puede ser NodeJS, HTML5, C++, Ruby On Rails, etc.</p>
-<p><img src="E:\ULL\PL\tareas-iniciales-casiano\images\cloud.png" alt=""></p>
-<p>Si disponemos de algún proyecto en un repositorio de GitHub podremos asociarlo a <strong>Cloud9</strong> para trabajar en él tan solo creando un “<code>nuevo workspace</code>” y añadiendo la url <em>git</em> del correspondiente repositorio.</p>
-<p><img src="E:\ULL\PL\tareas-iniciales-casiano\images\cloud2.png" alt=""></p>
-<p>Además <strong>Cloud9</strong> permite el trabajo en equipo en el IDE añadiendo miembros a tu workspace.</p>
-<h2 id="markdown">Markdown</h2>
-<p>Markdown es un lenguaje de marcado ligero, lo vamos a utilizar en el editor de texto Atom ya que incorpora por defecto este formato y podremos obtener un live preview mientras vamos desarrollando además de poder exportarlo a HTML sin la necesidad de usar un conversor adicional.</p>
-<p>Sintaxis:</p>
-<p>Encabezados</p>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>#&nbsp;Encabezado&nbsp;H1</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>##&nbsp;Encabezado&nbsp;H2</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>###&nbsp;Encabezado&nbsp;H3</span></span></span></div></pre><p>Tipografía</p>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta bullet-point star text"><span class="punctuation definition item text"><span>*</span></span><span>*Negrita**</span></span></span></div><div class="line"><span class="text plain"><span class="meta bullet-point star text"><span class="punctuation definition item text"><span>*</span></span><span>Cursiva*</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&gt;&nbsp;Citas</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Parrafo&nbsp;separar&nbsp;por&nbsp;lineas&nbsp;en&nbsp;blanco</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>`Codigo`</span></span></span></div></pre><p>Recursos</p>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>![Texto&nbsp;imagen](url-imagen)</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>*&nbsp;[Links](</span><span class="markup underline link https hyperlink"><span>https://example.com</span></span><span>)</span></span></span></div></pre><p>Listas</p>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>1.&nbsp;Lista&nbsp;1</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>2.&nbsp;Lista&nbsp;2</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta bullet-point star text"><span class="punctuation definition item text"><span>*</span></span><span>&nbsp;Lista&nbsp;1</span></span></span></div><div class="line"><span class="text plain"><span class="meta bullet-point star text"><span class="punctuation definition item text"><span>*</span></span><span>&nbsp;Lista&nbsp;2</span></span></span></div></pre><p><strong>Recursos:</strong></p>
-<ul>
-<li><a href="tutorial_node.html">Tutorial primeros pasos NodeJS</a></li>
-<li><a href="https://nodejs.org">NodeJS</a></li>
-<li><a href="http://expressjs.com">Express</a></li>
-<li><a href="https://atom.io">Atom IDE</a></li>
-<li><a href="https://desktop.github.com">GitHub Desktop</a></li>
-<li><a href="https://pages.github.com/">GitHub Pages</a></li>
-<li><a href="https://c9.io">Cloud 9 IDE</a></li>
-<li><a href="http://daringfireball.net/projects/markdown/">Markdown</a></li>
-<li><a href="http://alu0100536652.github.io/Tutorial-STW/">Resultado del Markdown HTML</a></li>
-</ul></body>
-</html>
+</div>
+</body>
